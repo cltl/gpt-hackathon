@@ -1,0 +1,4 @@
+Sitemap: https://cltl.github.io/gpt-hackaton/sitemap.xml
+
+User-agent: *
+Disallow:
