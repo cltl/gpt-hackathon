@@ -4,7 +4,7 @@
 
 * `The GPT hackaton is __`: *the opportunity for us to get hands on experience with Large LMs and prompting*
 * `By us, we mean __`: *the CLTL (staff and students)*
-* `The GPT hackaton will take place in __`: *a room in or close to the main building; to be precised soon* 
+* `The GPT hackaton will take place in __`: *the Aurora room in the main building* 
 * `The GPT hackaton will take place on __`: *May the 4th* 
 * `__`: *...*
 * `__`: *be with you*
