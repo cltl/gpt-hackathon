@@ -17,7 +17,7 @@ Setting this up is quite straightforward, the steps should be as follows (on mac
     - For example, if you downloaded the Koala weights, run: `MODEL=models/koala-13B-4bit-128g.GGML.bin examples/chat-13B.sh` which will launch a ChatGPT-like chatbot in your terminal.
 
 In my experience running the 4-bit quantized 13-billion parameter models requires about 12GB of memory, and the 7-billion version about 6.5GB.
-It is also possible 
+
 
 # Background
 ## LLaMA 
