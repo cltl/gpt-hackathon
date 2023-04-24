@@ -1,7 +1,7 @@
 A few tips for running one of the openly available (LLaMA-based) LLMs locally.
 
 
-# Getting started
+# On CPU
 https://github.com/ggerganov/llama.cpp is a repository with code that allows you to run LLaMA inference on the CPU.
 
 Setting this up is quite straightforward, the steps should be as follows (on mac/linux anyway):
@@ -17,6 +17,15 @@ Setting this up is quite straightforward, the steps should be as follows (on mac
     - For example, if you downloaded the Koala weights, run: `MODEL=models/koala-13B-4bit-128g.GGML.bin examples/chat-13B.sh` which will launch a ChatGPT-like chatbot in your terminal.
 
 In my experience running the 4-bit quantized 13-billion parameter models requires about 12GB of memory, and the 7-billion version about 6.5GB.
+
+For this package there are also python-bindings available [here](https://github.com/abetlen/llama-cpp-python), which also comes with an API that is compatible with the OpenAI API.
+
+
+# On GPU
+It is also possible to run these models on (Nvidia) GPUs, which will allow for faster inference.
+However, it does require a GPU with enough RAM.
+I have succesfully followed the steps from [this package](https://github.com/oobabooga/text-generation-webui/blob/main/docs/GPTQ-models-(4-bit-mode).md) to make this too work with 4-bit quantization, which allowed me to run the 7b parameter models on my GPU. Although, with my measly GTX1660 Super it's only a bit faster than running on CPU with the method above.
+
 
 
 # Background
