@@ -24,7 +24,7 @@ For this package there are also python-bindings available [here](https://github.
 # On GPU
 It is also possible to run these models on (Nvidia) GPUs, which will allow for faster inference.
 However, it does require a GPU with enough RAM.
-I have succesfully followed the steps from [this package](https://github.com/oobabooga/text-generation-webui/blob/main/docs/GPTQ-models-(4-bit-mode).md) to make this too work with 4-bit quantization, which allowed me to run the 7b parameter models on my GPU. Although, with my measly GTX1660 Super it's only a bit faster than running on CPU with the method above.
+I have succesfully followed the steps from [this package](https://github.com/oobabooga/text-generation-webui/) to make this too work with [4-bit quantization](https://github.com/oobabooga/text-generation-webui/blob/main/docs/GPTQ-models-(4-bit-mode).md), which allowed me to run the 7b parameter models on my GPU. Although, with my measly GTX1660 Super it's only a bit faster than running on CPU with the method above.
 
 
 
