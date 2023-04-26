@@ -5,7 +5,8 @@ date = Date(2023, 4, 11)
 +++
 
 # Contributing
-These pages are under construction. You can add content to existing pages or add new pages as explained next.
+We have lined up a few topics below. Feel free to add a new topic and to modify content for your topic.
+You can add content to existing pages or add new pages as explained next.
 
 ## Adding content
 ### Adding content to existing pages
