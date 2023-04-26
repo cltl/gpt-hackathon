@@ -62,6 +62,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://cltl.github.io/gpt-hackaton/pages/tools/index.html</loc>
+    <lastmod>2023-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://cltl.github.io/gpt-hackaton/pages/uncertainty_confidence/index.html</loc>
     <lastmod>2023-04-26</lastmod>
     <changefreq>monthly</changefreq>
