@@ -17,5 +17,5 @@
 * `12h30: __`  lunch break 
 * `13h00: __`  group work 
 * `16h00: __`  group presentations 
-* `17h00: __`  end of meeting 
+* `17h00: __`  voting and award ceremony 
 
