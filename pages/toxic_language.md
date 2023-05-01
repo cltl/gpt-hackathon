@@ -49,6 +49,9 @@ ChatGPT or  Koala
 Comparison to the gold data
 
 ### Example of the prompt
+
+<details><summary>Click here for the example</summary>
+  
 ```
 Given the sentence '{}' tokenized as '{}', output the target group, targeting tokens, and toxic tokens. The target group should be one of the following: {}.\n output the targeting tokens and toxic tokens in the sentence. For the targeting tokens, output both the words and a list of 0's and 1's indicating whether each word is a targeting token. For the toxic tokens, output both the words and a list of 0's and 1's indicating whether each word is a toxic token. Targeting tokens refer to the words or subwords in the sentence that are used to refer to a specific target, in this case, human beings. All words or subwords referring to the target should be included as targeting tokens, regardless of how many times they appear in the sentence. Toxic tokens refer to the words or subwords in the sentence that are considered to be harmful or offensive. These words may include profanity, insults, slurs, or any language that could be considered inappropriate or hurtful. Note that the specific criteria used to label words as toxic may vary depending on the context and the specific task. target group for the given text with respect to toxic language. Target group refers to a specific group of people who are being targeted for their identity in an offensive and harmful way. This may include groups that are marginalized, oppressed, or discriminated against based on their race, ethnicity, religion, gender identity, sexual orientation, or other personal characteristics. Here are a few examples:\
 **Input 1:**\
@@ -151,6 +154,7 @@ Targeting Tokens (0's and 1's): [1, 0, 0, 1, 1]\
 Toxic Tokens: [whore]\
 Toxic Tokens (0's and 1's): [0, 0, 0, 0, 1]\
 ```
+</details>
 Note that the sizes of the targeting tokens and toxic tokens lists should be exactly the same as the list of tokens, with each element in the targeting and toxic tokens lists corresponding to a single token in the list of tokens. Please ensure that the tokenization process used to generate the list of tokens is consistent with the criteria used to label the targeting and toxic tokens.
 
 
