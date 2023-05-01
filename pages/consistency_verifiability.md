@@ -8,4 +8,4 @@ Generative models are known to be wildly inconsistent: the same prompt can gener
 ## Research Question 
 _“What is the consistency and variability of the generated answers in Subjective versus Objective Tasks in Different Cultural Contexts with generative models?”_
 
-Please read the [document](_assets/consistenteam.pdf) for more information. 
+Please read the [document](https://github.com/cltl/gpt-hackaton/blob/c13f718af0e14334ecd6aa9be546559aeb120334/_assets/consistenteam.pdf) for more information. 
