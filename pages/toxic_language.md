@@ -162,10 +162,10 @@ Note that the sizes of the targeting tokens and toxic tokens lists should be exa
 
 |                 | Prompt Engineering for prediction of implied statement in an implicit toxic comment                                             |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Description     | From a given implicitly toxic text generate the statement that is implied.                                                      |
+| Description     | Given an implicitly toxic text, generate the statement that is implied by the implicit toxicity.                                |
 | Example Input   | “yes you are fine in a white majority country. how is mexico doing these days? people come here because you couldn’t build it.“ |
 | Expected Output | Implied Statement: mexicans are incompetent                                                                                     |
-| Reference       | Latent Hatred (ElSherief et al., 2021)                                                                                        |
+| Reference       | Latent Hatred (ElSherief et al., 2021)                                                                                          |
 | Dataset         | https://drive.google.com/file/d/1mLihcKXwzKJDntH7-RLxIR3msDZu_zHi/view?usp=share_link                                           |
 | Model(s)        | Any LLM usable for prompting (e.g. ChatGPT, Koala)                                                                              |
 | Evaluation      | Average and maximum BLEU and ROUGE scores between generated implied statement and reference implied statements.                 |
