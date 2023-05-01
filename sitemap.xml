@@ -50,6 +50,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://cltl.github.io/gpt-hackaton/pages/toxic_language/index.html</loc>
+    <lastmod>2023-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://cltl.github.io/gpt-hackaton/404/index.html</loc>
     <lastmod>2023-05-01</lastmod>
     <changefreq>monthly</changefreq>
