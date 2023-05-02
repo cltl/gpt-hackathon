@@ -4,7 +4,7 @@ hascode = false
 date = Date(2023, 4, 11)
 +++
 
-## Cross-document event coreference
+## FrameNet: Cross-document event coreference
 
 News articles often report on incidents (e.g. a terrorist attack or a natural disaster). Different articles may report on the same incident, but approach it from different perspectives. For instance, an article may have been written right after the event occurred, several weeks after the incident occurred (when new information is uncovered or follow-up events occur) or even years after the event (reflecting on its implications). There is a high degree of linguistic variation in how such events are expressed in text. It is very difficult for automatic systems to recognize if two texts are about the same incident or not (i.e. perform event coreference).
 
