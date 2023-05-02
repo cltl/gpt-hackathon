@@ -25,6 +25,7 @@ We are curious to see how we can prompt the newest generative LLMs to help with 
 - How do LLMs fare with less salient entities?
 - Can we use LLMs to reduce annotation costs/work (for creating training data for entity/event linking)?
 - How can LLMs be used to make historical research more accessible?
+- To what extend can we leverage hallucination (to create synthetic annotations) and to what extend can we avoid hallucination to obtain accurate information representation?
  
  
 ## Tasks
