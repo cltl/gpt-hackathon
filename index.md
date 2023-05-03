@@ -1,21 +1,10 @@
-@def title = "GPT Hackaton"
+@def title = "GPT Hackathon"
 
-# GPT Hackaton
+# Hallucination and bias: fight or exploit?
 
-* `The GPT hackaton is __`: *the opportunity for us to get hands on experience with Large LMs and prompting*
-* `By us, we mean __`: *the CLTL (staff and students)*
-* `The GPT hackaton will take place in __`: *the Aurora room in the main building* 
-* `The GPT hackaton will take place on __`: *May the 4th* 
-* `__`: *...*
-* `__`: *be with you*
-* `The GPT hackaton will last __`: *all day, see schedule*
+With the release of ChatGPT, the power of and debate around language models have reached the wider public discourse. Even though Large Language Models have been present within the field of NLP for a couple of years now, ChatGPT has raised questions about the role of LLMs in our research. 
 
-## Schedule
-* `9h30: __`  coffee 
-* `10h00: __` introduction (pitches and instructions) 
-* `11h00: __`  group work 
-* `12h30: __`  lunch break 
-* `13h00: __`  group work 
-* `16h00: __`  group presentations 
-* `17h00: __`  voting and award ceremony 
+LLMs produce highly fluent and natural-sounding text, which indicates that they have a good representation of many linguistic regularities. At the same time, it is a well-known tendency that they can make up facts and produce entirely nonsensical output with a high degree of confidence and express it in persuasive language (*hallucination*). In addition, LLMs are likely to reflect social biases present in their training data. 
+
+In this hackathon, we want to examine the tension between a high degree of linguistic competence and the danger of hallucination and reproduction of biases. We propose to work on tasks and datasets related to several of our research projects. Some tasks are about understanding text and producing labels (*fight* hallucination and bias), while others focus on how we could harness language models to augment datasets (*exploit* hallucination and bias). 
 
