@@ -2,6 +2,8 @@
 
 # Structural generalization in semantic parsing
 
+See Google Drive Folder for materials and additional explanation: [Folder](https://drive.google.com/drive/folders/1D_Glq-6y9L2bwmznGSRVevZx5nBbStwK?usp=share_link)
+
 ## Objective
 Prompt engineering to test the structural generalization abilities of GPT-x models with a semantic representation. 
 
@@ -43,7 +45,7 @@ You may additionally explore this notebook for ideas: [notebook](https://github.
 
 A yet-to-be-released dataset will be provided to those working on this task that extends the [COGS](https://github.com/najoungkim/COGS) dataset (Kim & Linzen, 2020). 
 
-Find data here: [Google Drive](https://drive.google.com/drive/folders/1f4rKR8FN438WcXvhTk5JnGNB-TpygCpT?usp=sharing)
+Find data in **Google Drive Folder** (linked at top).
 
 The dataset contains natural English sentences and their mappings to a logical form, as well as splits for training and generalization on several categories of structural generalization. 
 Participants will need to select specific generalization types to focus on.
@@ -61,6 +63,6 @@ _Example output_: Sentence with mapping to COGS LF.
 
 ### Evaluation
 
-Exact match on generalization sets. Compare to other models: ([slide 7])(https://docs.google.com/presentation/d/1vJ_VBitlqG9PUS7bYGL442i--PwA9-euRcJjzW4aVy4/edit?usp=sharing) 
+Exact match on generalization sets. Compare to other models: [slide 7](https://docs.google.com/presentation/d/1vJ_VBitlqG9PUS7bYGL442i--PwA9-euRcJjzW4aVy4/edit?usp=sharing) 
 
 
