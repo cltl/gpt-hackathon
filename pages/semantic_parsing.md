@@ -38,7 +38,7 @@ Create a prompt to test the structural generalization abilities of GPT-x models 
 
 _Recommended method_: explore prompting with GPT 3.5, and extend to GPT-4 (if compute and funds allow). 
 
-You may additionally explore this notebook for ideas: [notebook](https://github.com/frankaging/ReCOGS/blob/main/prompt_playground_public.ipynb)
+See **Tips & Tricks** document in Google Drive!
 
 
 ## Dataset 
