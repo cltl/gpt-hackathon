@@ -56,6 +56,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://cltl.github.io/gpt-hackaton/pages/biographical_facts/index.html</loc>
+    <lastmod>2023-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://cltl.github.io/gpt-hackaton/pages/consistency_verifiability/index.html</loc>
     <lastmod>2023-05-03</lastmod>
     <changefreq>monthly</changefreq>
