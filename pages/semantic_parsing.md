@@ -36,9 +36,14 @@ Create a prompt to test the structural generalization abilities of GPT-x models 
 
 _Recommended method_: explore prompting with GPT 3.5, and extend to GPT-4 (if compute and funds allow). 
 
+You may additionally explore this notebook for ideas: [notebook](https://github.com/frankaging/ReCOGS/blob/main/prompt_playground_public.ipynb)
+
+
 ## Dataset 
 
-A yet-to-be-released dataset will be provided to those working on this task that extends the [COGS](https://github.com/najoungkim/COGS) dataset (Kim & Linzen, 2020).
+A yet-to-be-released dataset will be provided to those working on this task that extends the [COGS](https://github.com/najoungkim/COGS) dataset (Kim & Linzen, 2020). 
+
+Find data here: [Google Drive](https://drive.google.com/drive/folders/1f4rKR8FN438WcXvhTk5JnGNB-TpygCpT?usp=sharing)
 
 The dataset contains natural English sentences and their mappings to a logical form, as well as splits for training and generalization on several categories of structural generalization. 
 Participants will need to select specific generalization types to focus on.
@@ -56,6 +61,6 @@ _Example output_: Sentence with mapping to COGS LF.
 
 ### Evaluation
 
-Exact match on generalization sets. Compare to other models: 
+Exact match on generalization sets. Compare to other models: ([slide 7])(https://docs.google.com/presentation/d/1vJ_VBitlqG9PUS7bYGL442i--PwA9-euRcJjzW4aVy4/edit?usp=sharing) 
 
 
