@@ -4,7 +4,7 @@
 
 See Google Drive Folder for materials and additional explanation: [Folder](https://drive.google.com/drive/folders/1D_Glq-6y9L2bwmznGSRVevZx5nBbStwK?usp=share_link)
 
-Please do not distribute materials beyond this hackathon, as this is work in progress to potentially be published! Thank you :-) 
+Please do not distribute materials beyond this hackathon, as this is work in progress to potentially be published. Thank you! 
 
 ## Objective
 Prompt engineering to test the structural generalization abilities of GPT-x models with a semantic representation. 
