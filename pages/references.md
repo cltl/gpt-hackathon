@@ -20,6 +20,7 @@ date = Date(2023, 4, 11)
 * Lu et al. (2022): [Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity](https://aclanthology.org/2022.acl-long.556.pdf)
 * Leister et al. (2021): [The Power of Scale for Parameter-Efficient Prompt Tuning](https://aclanthology.org/2021.emnlp-main.243.pdf)
 * Wang et al. (2022): [SELF-INSTRUCT: Aligning Language Model with Self Generated Instructions](https://arxiv.org/pdf/2212.10560.pdf)
+* Brown et al. (2020): [Language Models are few-shot learners](https://arxiv.org/abs/2005.14165)
 
 
 ## Sequence to sequence models / Conditional generation  

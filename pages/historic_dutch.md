@@ -1,10 +1,11 @@
 +++
-title = "Historic Dutch "
+title = "Historic Dutch"
 hascode = false
 date = Date(2023, 4, 11)
 +++
 
-# Historical Dutch 
+# Flagships and hardships: Extracting information from the centuries-old Dutch East India Company Archives
+
 The Dutch East India Company (VOC) produced a wealth of texts about their activity in Asia in the seventeenth and eighteenth centuries. 
 These texts are estimated to twenty-five million pages, and while many of them have been digitalized, research in these documents is still largely constrained by word-match searches.
 
