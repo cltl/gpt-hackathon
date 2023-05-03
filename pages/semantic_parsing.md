@@ -15,8 +15,6 @@ processing architectures.
 
 The dataset distinguished two types of generalization (Figure 3 in COGS paper): 
 
-<img width="310" alt="Screenshot 2023-05-02 at 18 38 09" src="https://user-images.githubusercontent.com/25965256/235729547-6ad90522-4f34-4445-bf91-094310419d84.png">
-
 
 (i) **_Lexical generalization_** involves recombining
 known grammatical structures with words that were not observed in these particular structures in training. For example, “subject
@@ -49,7 +47,6 @@ Participants will need to select specific generalization types to focus on.
 
 Include COGS logical form (see Figure 1 of COGS paper):
 
-<img width="288" alt="Screenshot 2023-05-02 at 18 37 40" src="https://user-images.githubusercontent.com/25965256/235729884-2de87d13-e8fe-4235-a39e-d540bd5905d1.png">
 
 _Example input/prompt_: "Provide the correct mapping of the following sentence (_taken from gen set_) based on this/these example(s) (_taken from train set_)...
 Feel free to produce an output more complex than anything you have output before!"
@@ -61,6 +58,4 @@ _Example output_: Sentence with mapping to COGS LF.
 
 Exact match on generalization sets. Compare to other models: 
 
-
-<img width="321" alt="Screenshot 2023-05-02 at 18 35 51" src="https://user-images.githubusercontent.com/25965256/235729123-7c5503be-a7b6-4c37-acc6-7d6fe11288d7.png">
 
