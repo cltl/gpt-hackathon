@@ -19,7 +19,7 @@ which can be translated as:
 
 > Since our latest message (here in copy) left with the ships Frederick Hendrik Hollandia, 't Wapen van Delff, 's landts Hollandia, and the Galias on the 12th of November last year together with Batavia and came through the Sunda Strait on the 15th of the same month, did arrive, God bless, on the 17th and the 21th from Taiwan and Japan successively the clipper Erasmus and the ship de Vreede, together loaded with 810 picul raw Chinese silk and 332 picul copper.
 
-We are curious to see how we can prompt the newest generative LLMs to help with event and entity detection, or even to directly answer historical research questions. We define three general research questions and also describe five more specified tasks that we can work on. Any new approach of answering (part of) a research question is also welcomed!
+We are curious to see how we can prompt the newest generative LLMs to help with event and entity detection, or even to directly answer historical research questions. We have defined four general research questions and also describe five more specified tasks that we can work on. Any new approach to answering (part of) a research question is also welcomed!
 
 ## Research questions
 
@@ -34,8 +34,8 @@ We are curious to see how we can prompt the newest generative LLMs to help with 
 1. Annotation task: prompt an LLM to annotate entities and events in a text, for instance by bracketing entities and event predicates with a predefined label set. 
     - Could the result be used for pre-annotations?
     - Are some types of entities or events harder to detect?
-2. Synthetic annotation generation: for a given (set of) annotation(s), generate varaitions of that annotation that could be used as synthetic training data.
-    - For example, given the annotated sentence "The ship [left] (isOfType Leaving) Batavia" prompt the model to create variations like "The ship [left] the harbour", etc.
+2. Synthetic annotation generation: for a given (set of) annotation(s), generate variations of the annotation that could be used as synthetic training data.
+    - For example, given the annotated sentence "The ship [left] Batavia" prompt the model to create variations like "The ship [left] the harbour", etc.
 4. Infer quantities of trade and transport: evaluating the LLMs’ ability to quantify events and entities
     - you might for instance ask how many ships travelled on the 12th of November, or how many ships left Taiwan in November.
 5. Listings: can you use LLMs to extract listings relating to voyages or people? We are interested in linking entities and events in relation to texts, and much of this information could be represented as tabular data.
