@@ -9,6 +9,9 @@ We prepared two prompt engineering challenges about toxic language detection.
 The first concerns the detection of *explicit* toxicity, the second detection and explanation of *implicit* toxicity.
 
 
+| DISCLAIMER: examples of toxic content below! |
+| --- |
+
 ## Challenge 1 - Explicit Toxicity
 Prompt Engineering for the detection of toxic spans, target spans, and target group from an explicit toxic text.
 
@@ -32,15 +35,16 @@ Target group: Islam
 ```
 Please note that 0 refers to the corresponding non-toxic/non-targeting token while 1 refers to the corresponding toxic/targeting token. 
 
-### References
-1. Mathew, B., Saha, P., Yimam, S. M., Biemann, C., Goyal, P., & Mukherjee, A. (2021, May). Hatexplain: A benchmark dataset for explainable hate speech detection. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 17, pp. 14867-14875).
-2. Barbarestani, B., Maks, I., & Vossen, P. (2022, October). Annotating Targets of Toxic Language at the Span Level. In Proceedings of the Third Workshop on Threat, Aggression and Cyberbullying (TRAC 2022) (pp. 43-51).
-3. https://github.com/cltl/Target-Spans-Detection
+### Links
+1. [Mathew, B., Saha, P., Yimam, S. M., Biemann, C., Goyal, P., & Mukherjee, A. (2021, May). Hatexplain: A benchmark dataset for explainable hate speech detection. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 17, pp. 14867-14875).](https://arxiv.org/abs/2012.10289)
+2. [Barbarestani, B., Maks, I., & Vossen, P. (2022, October). Annotating Targets of Toxic Language at the Span Level. In Proceedings of the Third Workshop on Threat, Aggression and Cyberbullying (TRAC 2022) (pp. 43-51).](https://aclanthology.org/2022.trac-1.6/)
+3. [GitHub repository for \[2\]](https://github.com/cltl/Target-Spans-Detection)
 
 ### Data
-- [training](https://drive.google.com/file/d/15XNhpVGcDnWKnjYY8cp_vNNp_vGkERlx/view?usp=share_link)
+- [Training](https://drive.google.com/file/d/15XNhpVGcDnWKnjYY8cp_vNNp_vGkERlx/view?usp=share_link)
 - [Development](https://drive.google.com/file/d/1fG9hGIeaOFq7e5yPdopTNJl8RX1Wbx5N/view?usp=share_link)
-- [test](https://drive.google.com/file/d/1fG9hGIeaOFq7e5yPdopTNJl8RX1Wbx5N/view?usp=share_link)
+- [Test](https://drive.google.com/file/d/1fG9hGIeaOFq7e5yPdopTNJl8RX1Wbx5N/view?usp=share_link)
+- [Target Groups](https://drive.google.com/file/d/1-38qOI3YbI56MmVLSq6AO34d5WnBO8PQ/view?usp=share_link)
 
 ### Models
 ChatGPT or  Koala
@@ -50,8 +54,6 @@ Comparison to the gold data
 
 ### Example of the prompt
 
-<details><summary>Click here for the example</summary>
-  
 ```
 Given the sentence '{}' tokenized as '{}', output the target group, targeting tokens, and toxic tokens. The target group should be one of the following: {}.\n output the targeting tokens and toxic tokens in the sentence. For the targeting tokens, output both the words and a list of 0's and 1's indicating whether each word is a targeting token. For the toxic tokens, output both the words and a list of 0's and 1's indicating whether each word is a toxic token. Targeting tokens refer to the words or subwords in the sentence that are used to refer to a specific target, in this case, human beings. All words or subwords referring to the target should be included as targeting tokens, regardless of how many times they appear in the sentence. Toxic tokens refer to the words or subwords in the sentence that are considered to be harmful or offensive. These words may include profanity, insults, slurs, or any language that could be considered inappropriate or hurtful. Note that the specific criteria used to label words as toxic may vary depending on the context and the specific task. target group for the given text with respect to toxic language. Target group refers to a specific group of people who are being targeted for their identity in an offensive and harmful way. This may include groups that are marginalized, oppressed, or discriminated against based on their race, ethnicity, religion, gender identity, sexual orientation, or other personal characteristics. Here are a few examples:\
 **Input 1:**\
@@ -154,43 +156,62 @@ Targeting Tokens (0's and 1's): [1, 0, 0, 1, 1]\
 Toxic Tokens: [whore]\
 Toxic Tokens (0's and 1's): [0, 0, 0, 0, 1]\
 ```
-</details>
 Note that the sizes of the targeting tokens and toxic tokens lists should be exactly the same as the list of tokens, with each element in the targeting and toxic tokens lists corresponding to a single token in the list of tokens. Please ensure that the tokenization process used to generate the list of tokens is consistent with the criteria used to label the targeting and toxic tokens.
 
 
 ## Challenge 2 - Implicit Toxicity
 ### Task Description
-Given an implicitly toxic text, generate the statement that is implied by the implicit toxicity.
+Given an implicitly toxic text, predict if it is non-toxic, explicitly-toxic, or implicitly-toxic.
+Then, if it is implicitly toxic, generate the statement that is implied.
+
+Finally we can prompt for an explanation: 
+ - How are the implied statement and input connected? 
+ - Why is this what is being implied (as opposed to some other potential implication), what are the reasons for concluding it.
+
 
 ### Data
-Latent Hatred (ElSherief et al., 2021)
-https://drive.google.com/file/d/1mLihcKXwzKJDntH7-RLxIR3msDZu_zHi/view?usp=share_link
+[Latent Hatred (ElSherief et al., 2021)](https://drive.google.com/file/d/1mLihcKXwzKJDntH7-RLxIR3msDZu_zHi/view?usp=share_link)
 
-#### Example Input - 1
-“yes you are fine in a white majority country. how is mexico doing these days? people come here because you couldn’t build it.“
+#### Example 1
+Input:
+```
+yes you are fine in a white majority country. how is mexico doing these days? people come here because you couldn’t build it.
+```
 
-#### Expected Output - 1
-Implied Statement: 
- - mexicans are incompetent
+Output:
+```
+Toxicity: implicitly-toxic
+
+Implied statements:
+ - mexicans are incompetent; or
  - White people can do more than Mexicans.
 
-Explanation: How are the implied statement and input connected? Why is this what is being implied (as opposed to some other potential implication), what are the reasons for concluding it.
+Explanation: ...
+```
 
+#### Example 2
+Input:
+```
+perhaps some of the #msm is starting to open their eyes and see the true racial #truth #govt #us #africa
+```
 
-#### Example Input - 2
-*“perhaps some of the #msm is starting to open their eyes and see the true racial #truth #govt #us #africa“*
+Output:
+```
+Toxicity: implicitly-toxic
 
-#### Expected Output - 2
-Implied Statement:
- - *'blacks discriminates toward whites'* or
- - *'Liberals are ignorant'*.
-
+Implied statements:
+ - blacks discriminates toward whites; or
+ - Liberals are ignorant.
+ 
+Explanation: ...
+```
 (Multiple implications can be correct, both have potentiall different reasons for being true.)
 
 
 ### Models
 Any LLM capable enough for prompting approach (recent chat-oriented examples: ChatGPT, Koala, Open Assistant, etc.)
 
+
 ### Evaluation
-Average and maximum BLEU and ROUGE scores between generated implied statement and reference implied statements.
-Evaluation of explanations can be decided collectively during Hackathon.
+As a basic metric, we use average/maximum BLEU and ROUGE scores between generated implied statement and reference implied statements.
+Evaluation of explanations will be decided on during the Hackathon.
