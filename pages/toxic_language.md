@@ -5,7 +5,7 @@ date = Date(2023, 4, 11)
 +++
 
 # Toxic language Detection
-We formulated two prompt engineering challenges to do with toxic language detection.
+We prepared two prompt engineering challenges about toxic language detection.
 The first concerns the detection of *explicit* toxicity, the second detection and explanation of *implicit* toxicity.
 
 
@@ -159,13 +159,38 @@ Note that the sizes of the targeting tokens and toxic tokens lists should be exa
 
 
 ## Challenge 2 - Implicit Toxicity
+### Task Description
+Given an implicitly toxic text, generate the statement that is implied by the implicit toxicity.
 
-|                 | Prompt Engineering for prediction of implied statement in an implicit toxic comment                                             |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Description     | Given an implicitly toxic text, generate the statement that is implied by the implicit toxicity.                                |
-| Example Input   | “yes you are fine in a white majority country. how is mexico doing these days? people come here because you couldn’t build it.“ |
-| Expected Output | Implied Statement: mexicans are incompetent                                                                                     |
-| Reference       | Latent Hatred (ElSherief et al., 2021)                                                                                          |
-| Dataset         | https://drive.google.com/file/d/1mLihcKXwzKJDntH7-RLxIR3msDZu_zHi/view?usp=share_link                                           |
-| Model(s)        | Any LLM usable for prompting (e.g. ChatGPT, Koala)                                                                              |
-| Evaluation      | Average and maximum BLEU and ROUGE scores between generated implied statement and reference implied statements.                 |
+### Data
+Latent Hatred (ElSherief et al., 2021)
+https://drive.google.com/file/d/1mLihcKXwzKJDntH7-RLxIR3msDZu_zHi/view?usp=share_link
+
+#### Example Input - 1
+“yes you are fine in a white majority country. how is mexico doing these days? people come here because you couldn’t build it.“
+
+#### Expected Output - 1
+Implied Statement: 
+ - mexicans are incompetent
+ - White people can do more than Mexicans.
+
+Explanation: How are the implied statement and input connected? Why is this what is being implied (as opposed to some other potential implication), what are the reasons for concluding it.
+
+
+#### Example Input - 2
+*“perhaps some of the #msm is starting to open their eyes and see the true racial #truth #govt #us #africa“*
+
+#### Expected Output - 2
+Implied Statement:
+ - *'blacks discriminates toward whites'* or
+ - *'Liberals are ignorant'*.
+
+(Multiple implications can be correct, both have potentiall different reasons for being true.)
+
+
+### Models
+Any LLM capable enough for prompting approach (recent chat-oriented examples: ChatGPT, Koala, Open Assistant, etc.)
+
+### Evaluation
+Average and maximum BLEU and ROUGE scores between generated implied statement and reference implied statements.
+Evaluation of explanations can be decided collectively during Hackathon.
