@@ -36,9 +36,7 @@ Large language models additionally show a performance ceiling of 80-90% exact ma
 
 Create a prompt to test the structural generalization abilities of GPT-x models via semantic parsing. 
 
-_Recommended method_: explore prompting with GPT 3.5, and extend to GPT-4 (if compute and funds allow). 
-
-See **Tips & Tricks** document in Google Drive!
+See **Tips & Tricks** document in Google Drive for possible methods to do this!
 
 
 ## Dataset 
