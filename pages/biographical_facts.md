@@ -17,7 +17,7 @@ In short, we would like to extract structured information from free text in the 
 
 > Matthijs Musson (1593 in Antwerp – 3 November 1678) was a painter and art dealer based in Antwerp, who played an important role in popularizing artists of the 17th-century Antwerp school by marketing them throughout Europe. Matthijs Musson was born in Antwerp as the son of Robert Musson, an innkeeper. Matthijs is possibly a pupil in the workshop of Rubens and becomes a master in the Antwerp Guild of Saint Luke in 1622.
 
-From such pasagge we would like to extract structured triples with the most salient information such as:
+From such text we would like to extract structured triples with the most salient information such as:
 
 - (Matthijs Musson, place of birth, Antwerp)
 - (Matthijs Musson, place of death, Antwerp)
