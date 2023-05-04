@@ -201,11 +201,11 @@ Toxicity: implicitly-toxic
 Implied statements:
  - blacks discriminates toward whites; or
  - Liberals are ignorant.
- 
+ GitHub
 Explanation: ...
 ```
 
-(Multiple implications can be correct, both have potentiall different reasons for being true.)
+(Multiple implications can be correct, both have potentially different reasons for being true.)
 
 
 ### Models
