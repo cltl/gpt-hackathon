@@ -102,20 +102,20 @@ Target group: Women\
 Targeting Tokens: [She, a, whore]\
 Targeting Tokens (<span class=hljs-number >0</span>&#x27;s and <span class=hljs-number >1</span>&#x27;s): [<span class=hljs-number >1</span>, <span class=hljs-number >0</span>, <span class=hljs-number >0</span>, <span class=hljs-number >1</span>, <span class=hljs-number >1</span>]\
 Toxic Tokens: [whore]\
-Toxic Tokens (<span class=hljs-number >0</span>&#x27;s and <span class=hljs-number >1</span>&#x27;s): [<span class=hljs-number >0</span>, <span class=hljs-number >0</span>, <span class=hljs-number >0</span>, <span class=hljs-number >0</span>, <span class=hljs-number >1</span>]\</code></pre> <p>Note that the sizes of the targeting tokens and toxic tokens lists should be exactly the same as the list of tokens, with each element in the targeting and toxic tokens lists corresponding to a single token in the list of tokens. Please ensure that the tokenization process used to generate the list of tokens is consistent with the criteria used to label the targeting and toxic tokens.</p> <h2 id=challenge_2_-_implicit_toxicity ><a href="#challenge_2_-_implicit_toxicity" class=header-anchor >Challenge 2 - Implicit Toxicity</a></h2> <h3 id=task_description__2 ><a href="#task_description__2" class=header-anchor >Task Description</a></h3> <p>Given an implicitly toxic text, predict if it is non-toxic, explicitly-toxic, or implicitly-toxic. Then, if it is implicitly toxic, generate the statement that is implied.</p> <p>Finally we can prompt for an explanation: </p> <ul> <li><p>How are the implied statement and input connected? </p> <li><p>Why is this what is being implied &#40;as opposed to some other potential implication&#41;, what are the reasons for concluding it.</p> </ul> <h3 id=data__2 ><a href="#data__2" class=header-anchor >Data</a></h3> <p><a href="https://drive.google.com/file/d/1mLihcKXwzKJDntH7-RLxIR3msDZu_zHi/view?usp&#61;share_link">Latent Hatred &#40;ElSherief et al., 2021&#41;</a></p> <h4 id=example_1 ><a href="#example_1" class=header-anchor >Example 1</a></h4> <p>Input:</p> <pre><code class="julia hljs">yes you are fine <span class=hljs-keyword >in</span> a white majority country. how is mexico doing these days? people come here because you couldn’t build it.</code></pre>
+Toxic Tokens (<span class=hljs-number >0</span>&#x27;s and <span class=hljs-number >1</span>&#x27;s): [<span class=hljs-number >0</span>, <span class=hljs-number >0</span>, <span class=hljs-number >0</span>, <span class=hljs-number >0</span>, <span class=hljs-number >1</span>]\</code></pre> <p>Note that the sizes of the targeting tokens and toxic tokens lists should be exactly the same as the list of tokens, with each element in the targeting and toxic tokens lists corresponding to a single token in the list of tokens. Please ensure that the tokenization process used to generate the list of tokens is consistent with the criteria used to label the targeting and toxic tokens.</p> <h2 id=challenge_2_-_implicit_toxicity ><a href="#challenge_2_-_implicit_toxicity" class=header-anchor >Challenge 2 - Implicit Toxicity</a></h2> <h3 id=task_description__2 ><a href="#task_description__2" class=header-anchor >Task Description</a></h3> <p>Given an implicitly toxic text, predict if it is non-toxic, explicitly-toxic, or implicitly-toxic. Then, if it is implicitly toxic, generate the statement that is implied.</p> <p>Finally we can prompt for an explanation: </p> <ul> <li><p>How are the implied statement and input connected? </p> <li><p>Why is this what is being implied &#40;as opposed to some other potential implication&#41;, what are the reasons for concluding it.</p> </ul> <h3 id=data__2 ><a href="#data__2" class=header-anchor >Data</a></h3> <p><a href="https://drive.google.com/file/d/1mLihcKXwzKJDntH7-RLxIR3msDZu_zHi/view?usp&#61;share_link">Latent Hatred &#40;ElSherief et al., 2021&#41;</a></p> <h4 id=example_1 ><a href="#example_1" class=header-anchor >Example 1</a></h4> <p>Input:</p> <pre><code class="text hljs">yes you are fine in a white majority country. how is mexico doing these days? people come here because you couldn’t build it.</code></pre>
 <p>Output:</p>
-<pre><code class="julia hljs">Toxicity: implicitly-toxic
+<pre><code class="text hljs">Toxicity: implicitly-toxic
 
 Implied statements:
  - mexicans are incompetent; or
- - White people can <span class=hljs-keyword >do</span> more than Mexicans.
+ - White people can do more than Mexicans.
 
 Explanation: ...</code></pre>
 <h4 id=example_2 ><a href="#example_2" class=header-anchor >Example 2</a></h4>
 <p>Input:</p>
-<pre><code class="julia hljs">perhaps some of the <span class=hljs-comment >#msm is starting to open their eyes and see the true racial #truth #govt #us #africa</span></code></pre>
+<pre><code class="text hljs">perhaps some of the #msm is starting to open their eyes and see the true racial #truth #govt #us #africa</code></pre>
 <p>Output:</p>
-<pre><code class="julia hljs">Toxicity: implicitly-toxic
+<pre><code class="text hljs">Toxicity: implicitly-toxic
 
 Implied statements:
  - blacks discriminates toward whites; or
