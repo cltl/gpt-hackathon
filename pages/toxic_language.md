@@ -10,7 +10,6 @@ The first concerns the detection of *explicit* toxicity, the second detection an
 
 
 | DISCLAIMER: examples of toxic content below! |
-| --- |
 
 ## Challenge 1 - Explicit Toxicity
 Prompt Engineering for the detection of toxic spans, target spans, and target group from an explicit toxic text.
@@ -38,7 +37,7 @@ Please note that 0 refers to the corresponding non-toxic/non-targeting token whi
 ### Links
 1. [Mathew, B., Saha, P., Yimam, S. M., Biemann, C., Goyal, P., & Mukherjee, A. (2021, May). Hatexplain: A benchmark dataset for explainable hate speech detection. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 17, pp. 14867-14875).](https://arxiv.org/abs/2012.10289)
 2. [Barbarestani, B., Maks, I., & Vossen, P. (2022, October). Annotating Targets of Toxic Language at the Span Level. In Proceedings of the Third Workshop on Threat, Aggression and Cyberbullying (TRAC 2022) (pp. 43-51).](https://aclanthology.org/2022.trac-1.6/)
-3. [GitHub repository for \[2\]](https://github.com/cltl/Target-Spans-Detection)
+3. [GitHub repository for 'Annotating Targets of Toxic Language at the Span Level.'](https://github.com/cltl/Target-Spans-Detection)
 
 ### Data
 - [Training](https://drive.google.com/file/d/15XNhpVGcDnWKnjYY8cp_vNNp_vGkERlx/view?usp=share_link)
