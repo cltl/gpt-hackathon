@@ -173,12 +173,12 @@ Finally we can prompt for an explanation:
 
 #### Example 1
 Input:
-```
+```text
 yes you are fine in a white majority country. how is mexico doing these days? people come here because you couldn’t build it.
 ```
 
 Output:
-```
+```text
 Toxicity: implicitly-toxic
 
 Implied statements:
@@ -190,12 +190,12 @@ Explanation: ...
 
 #### Example 2
 Input:
-```
+```text
 perhaps some of the #msm is starting to open their eyes and see the true racial #truth #govt #us #africa
 ```
 
 Output:
-```
+```text
 Toxicity: implicitly-toxic
 
 Implied statements:
