@@ -1,5 +1,5 @@
 +++
-title = "Historic Dutch"
+title = "Historical Dutch"
 hascode = false
 date = Date(2023, 4, 11)
 +++
@@ -49,5 +49,7 @@ We are curious to see how we can prompt the newest generative LLMs to help with 
 
 Data will be provided on the day of the workshop. 
 
+## Results
+A short report summarizing the findings of our task can be found in [this google doc](https://docs.google.com/document/d/1QmGNsZWVUhVOCZ_XeKaHGDtwWUkWMp-65jJyPssZHAM/edit?usp=sharing). In this report you will also find a link to the slides presented on the day of the hackathon.
 
 [^1]: National Archive, The Hague, The Netherlands, 1.04.02 (Archive of the VOC), inventory no. 1092, folio 1, r.
